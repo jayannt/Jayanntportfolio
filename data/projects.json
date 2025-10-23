@@ -1,58 +1,87 @@
 {
   "projects": [
-    {
+       {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "A full-stack e-commerce solution with payment integration, inventory management, and real-time analytics.",
-      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop",
-      "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/ecommerce",
-      "tags": ["React", "Node.js", "MongoDB", "Stripe"]
-    },
+      "title": "Career Roadmap",
+      "description": "Explore the unthinkable Career Opportunities and roadmap and choose your career yourself.",
+      "image": "assets/images/career-roadmap.jpg",
+      "demo": "projects/weather-dashboard/index.html",
+      "github": "https://github.com/jayannt/CareerRoadmap.git",
+      "tags": ["SpringBoot", "JQuery", "JavaScript", "Mysql"]
+    }
+,
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "Collaborative project management tool with real-time updates, team collaboration, and deadline tracking.",
-      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop",
+      "title": "Art Gallary",
+      "description": "An art gallery exhibits the works of many artists. Each artist is given a specified space on the online webpage.",
+      "image": "assets/images/artgallary.jpg",
       "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/taskmanager",
-      "tags": ["Vue.js", "Firebase", "Tailwind CSS"]
+      "github": "https://github.com/jayannt/ArtGallary.git",
+      "tags": ["JavaScript", "PHP", "CSS","MySQL"]
     },
     {
       "id": 3,
       "title": "Weather Dashboard",
       "description": "Beautiful weather application with forecasts, interactive maps, and location-based recommendations.",
-      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&auto=format&fit=crop",
+      "image": "assets/images/weather-dashboard.jpg",
       "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/weather",
+      "github": "https://github.com/jayannt/Weather-Dashboard.git",
       "tags": ["JavaScript", "API Integration", "CSS3"]
     },
     {
       "id": 4,
       "title": "Social Media Analytics",
       "description": "Comprehensive analytics dashboard for tracking social media performance and engagement metrics.",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+      "image": "assets/images/socialmedia-analytics.jpg",
       "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/analytics",
+      "github": "https://github.com/jayannt/Social-Media-Analytics.git",
       "tags": ["Python", "Django", "D3.js", "PostgreSQL"]
     },
     {
       "id": 5,
       "title": "Recipe Finder",
       "description": "Discover and save your favorite recipes with smart search, meal planning, and nutritional information.",
-      "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&auto=format&fit=crop",
+      "image": "assets/images/recepie-finder.jpg",
       "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/recipes",
+      "github": "https://github.com/jayannt/Recipe-Finder.git",
       "tags": ["React", "Redux", "Express", "MySQL"]
     },
     {
       "id": 6,
-      "title": "Portfolio Generator",
-      "description": "Easy-to-use tool for creating stunning portfolio websites with customizable templates and themes.",
-      "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&auto=format&fit=crop",
+      "title": "BookShop",
+      "description": "An elegant and responsive Online Bookshop that makes discovering and buying books simple and delightful.",
+      "image": "assets/images/bookshop.jpg",
       "demo": "https://example.com/demo",
-      "github": "https://github.com/yourusername/portfolio-generator",
-      "tags": ["Next.js", "TypeScript", "Prisma", "AWS"]
+      "github": "https://github.com/jayannt/Bookshop.git",
+      "tags": ["Python", "Django", "Bootstrap"]
+    },
+     {
+      "id": 7,
+      "title": "News Portal",
+      "description": "A dynamic and responsive News Portal that delivers the latest updates from around the world in real time",
+      "image": "assets/images/news-portal.jpg",
+      "demo": "https://example.com/demo",
+      "github": "https://github.com/jayannt/News-Portal.git",
+      "tags": ["HTML", "JavaScript", "PHP", "SQL"]
+    }
+    ,
+    {
+      "id": 8,
+      "title": "Guess The Country Flag",
+      "description": "“Guess the Country by Flag” is an interactive and educational game designed to test your knowledge of world flags.",
+      "image": "assets/images/guessthecountry.jpg",
+      "demo": "projects/weather-dashboard/index.html",
+      "github": "https://github.com/jayannt/Guess-The-Country-Flag.git",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 9,
+      "title": "Drawing pad",
+      "description": "A simple and interactive drawing pad that lets users sketch freely using different colors and brush sizes.",
+      "image": "assets/images/drawingpad.jpg",
+      "demo": "projects/weather-dashboard/index.html",
+      "github": "https://github.com/jayannt/Drawing-Pad.git",
+      "tags": ["HTML", "CSS", "JavaScript"]
     }
   ]
 }

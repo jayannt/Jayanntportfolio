@@ -106,3 +106,87 @@ function hideLoader() {
 }
 
 export { showLoader, hideLoader, initScrollAnimations };
+ const texts = [
+      
+      "Full Stack Developer.",
+      "Devops Engineer.",
+      "IT Enthusiast."
+    ];
+
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+    let isDeleting = false;
+
+    function type() {
+      const current = count % texts.length;
+      const fullText = texts[current];
+
+      if (isDeleting) {
+        letter = fullText.substring(0, index--);
+      } else {
+        letter = fullText.substring(0, index++);
+      }
+
+      document.getElementById('text').textContent = letter;
+
+      let typeSpeed = 120;
+
+      if (isDeleting) { typeSpeed /= 2; }
+
+      if (!isDeleting && letter === fullText) {
+        typeSpeed = 1000;
+        isDeleting = true;
+      } else if (isDeleting && letter === '') {
+        isDeleting = false;
+        count++;
+        typeSpeed = 500;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    type();
+
+
+// Get the div
+const scrollDiv = document.getElementById("goup");
+
+// Show div when scrolled down 100px
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollDiv.style.display = "flex";
+  } else {
+    scrollDiv.style.display = "none";
+  }
+};
+
+// Scroll to top on click
+scrollDiv.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // smooth scroll
+  });
+});
+const toggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Load saved theme
+if(localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+}
+
+toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    // Change button icon
+    if(body.classList.contains('dark-mode')) {
+        toggle.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        toggle.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    }
+});

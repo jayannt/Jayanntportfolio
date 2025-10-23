@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio showcasing projects, skills, and professional experience">
-    <meta name="author" content="Your Name">
-    <title>Portfolio | Your Name</title>
+    <meta name="author" content="Jayannt">
+    <title>Portfolio | Jayannt</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -22,18 +23,65 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div id="navbar-container"></div>
+    <div id="navbar-container"></div>                    <div class="theme-toggle" id="theme-toggle">🌙</div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Profile Photo" class="profile-img">
+                </div>
         <div class="container">
-            <div class="hero-content fade-in">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <p class="hero-subtitle">Full Stack Developer & Creative Problem Solver</p>
-                <p class="hero-description">I build innovative digital solutions that make a difference.</p>
+            <div class="hero-content fade-in">        
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Jayannt.</span></h1>
+                <p style="display: inline;" class="hero-subtitle">I'm, </p><p style="display: inline;" class="hero-subtitle" id="text"></p>
+                <p class="hero-description">Exploring-Thinking-Building-Learning.</p>
+                <p class="hero-description">Need is the mother of invantions And Exploration is the father of Creativity.</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <div class="resume-download">
+                        <a href="assets/resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+                    </div>
+
+
+
+              </div> 
+<div class="social-links">
+  <!-- GitHub -->
+  <a href="https://github.com/jayannt" class="social-link" aria-label="GitHub" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg>
+  </a>
+<a href="https://instagram.com/jayannt.z" class="social-link" aria-label="Instagram" target="_blank">
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="2"/>
+    <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/>
+  </svg>
+</a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/jayant-bhusare-3400ba299" class="social-link" aria-label="LinkedIn" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    </svg>
+  </a>
+  
+<!-- YouTube -->
+<a href="https://youtube.com/@jayantbhusare" class="social-link" aria-label="YouTube" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+  </svg>
+</a>
+
+ <!-- X -->
+<a href="https://x.com/@BhusareJayant" class="social-link" aria-label="X (formerly Twitter)" target="_blank">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  </svg>
+</a>
                 </div>
             </div>
         </div>
@@ -44,30 +92,116 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Profile Photo" class="profile-img">
-                </div>
+                
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm a passionate developer with expertise in creating elegant solutions to complex problems.
-                        With a background in both design and development, I bring a unique perspective to every project.
+I am a passionate Developer and DevOps enthusiast with a strong drive for innovation and continuous learning. I enjoy exploring the IT field, staying updated with emerging technologies, and applying creative solutions to challenging problems. Working in a team environment excites me — I thrive both as a collaborator and a leader, guiding projects and team members toward success. I take pride in thinking creatively, bringing ideas to life, and constantly expanding my knowledge to grow as a professional in the ever-evolving world of technology.
                     </p>
                     <div class="skills-container">
-                        <h3>Skills & Technologies</h3>
-                        <div class="skills-grid">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">CSS/SASS</span>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
-                    </div>
-                    <div class="resume-download">
-                        <a href="assets/resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
-                    </div>
+    <h3>Skills & Technologies</h3>
+    
+    <!-- Programming Languages -->
+    <div class="skills-category" id="skills">
+        <h4>Programming Languages</h4>
+        <div class="skills-grid">
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/python/python-original.svg" alt="HTML5 Icon" width="30" height="30">Python</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/java/java-original.svg" alt="HTML5 Icon" width="30" height="30">Java</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/javascript/javascript-original.svg" alt="HTML5 Icon" width="30" height="30">JavaScript</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/cplusplus/cplusplus-original.svg" alt="HTML5 Icon" width="30" height="30">C++</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/c/c-original.svg" alt="HTML5 Icon" width="30" height="30">C</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/csharp/csharp-original.svg" alt="HTML5 Icon" width="30" height="30">C#</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/php/php-original.svg" alt="HTML5 Icon" width="30" height="30">PHP</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master//icons/sqldeveloper/sqldeveloper-original.svg" alt="HTML5 Icon" width="30" height="30">SQL</span>
+        </div>
+    </div>
+
+        <!-- DevOps & Cloud -->
+    <div class="skills-category">
+        <h4>DevOps & Cloud</h4>
+        <div class="skills-grid">
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/linux/linux-original.svg" alt="HTML5 Icon" width="30" height="30">Linux</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/docker/docker-original.svg" alt="HTML5 Icon" width="30" height="30">Docker</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/kubernetes/kubernetes-original.svg" alt="HTML5 Icon" width="30" height="30">Kubernetes</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="HTML5 Icon" width="30" height="30">AWS</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/googlecloud/googlecloud-original.svg" alt="HTML5 Icon" width="30" height="30">Google Cloud</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/firebase/firebase-original.svg" alt="HTML5 Icon" width="30" height="30">Firebase</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/git/git-original.svg" alt="HTML5 Icon" width="30" height="30">Git</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/github/github-original.svg" alt="HTML5 Icon" width="30" height="30">GitHub</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/terraform/terraform-original.svg" alt="HTML5 Icon" width="30" height="30">Terraform</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/ansible/ansible-original.svg" alt="HTML5 Icon" width="30" height="30">Ansible</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/jenkins/jenkins-original.svg" alt="HTML5 Icon" width="30" height="30">Jenkins</span>
+        </div>
+    </div>
+    
+    <!-- Web Development -->
+    <div class="skills-category">
+        <h4>Web Development</h4>
+        <div class="skills-grid">
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/html5/html5-original.svg" alt="HTML5 Icon" width="30" height="30">HTML5</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/css3/css3-original.svg" alt="HTML5 Icon" width="30" height="30">CSS /<img src="assets/svg/devicon-master/icons/sass/sass-original.svg" alt="HTML5 Icon" width="30" height="30"> SASS</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/react/react-original.svg" alt="HTML5 Icon" width="30" height="30">React</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/nodejs/nodejs-original.svg" alt="HTML5 Icon" width="30" height="30">Node.js</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/nextjs/nextjs-original.svg" alt="HTML5 Icon" width="30" height="30">Next.js</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/angular/angular-original.svg" alt="HTML5 Icon" width="30" height="30">Angular</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/jquery/jquery-original.svg" alt="HTML5 Icon" width="30" height="30">jQuery</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/bootstrap/bootstrap-original.svg" alt="HTML5 Icon" width="30" height="30">Bootstrap</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/tailwindcss/tailwindcss-original.svg" alt="HTML5 Icon" width="30" height="30">Tailwind</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/express/express-original.svg" alt="HTML5 Icon" width="30" height="30">Express.js</span>
+        </div>
+    </div>
+    
+    <!-- Database Management -->
+    <div class="skills-category">
+        <h4>Database Management</h4>
+        <div class="skills-grid">
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/sqldeveloper/sqldeveloper-original.svg" alt="HTML5 Icon" width="30" height="30">MySQL</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/mongodb/mongodb-original.svg" alt="HTML5 Icon" width="30" height="30">MongoDB</span>
+        </div>
+    </div>
+    
+    <!-- Full Stack -->
+    <div class="skills-category">
+        <h4>Full Stack Skills</h4>
+        <div class="skills-grid">
+            <span class="skill-tag">Front-End Development</span>
+            <span class="skill-tag">Back-End Development</span>
+            <span class="skill-tag">Server Management</span>
+            <span class="skill-tag">Deployment</span>
+        </div>
+    </div>
+    
+    <!-- Soft Skills -->
+    <div class="skills-category">
+        <h4>Soft Skills</h4>
+        <div class="skills-grid">
+            <span class="skill-tag">Problem-Solving</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Out-of-the-box Thinking</span>
+            <span class="skill-tag">Active Listening</span>
+            <span class="skill-tag">Decision Making</span>
+        </div>
+    </div>
+    
+    <!-- Design & Editing -->
+    <div class="skills-category">
+        <h4>Design & Editing</h4>
+        <div class="skills-grid">
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/photoshop/photoshop-original.svg" alt="HTML5 Icon" width="30" height="30">Photoshop</span>
+            <span class="skill-tag"><img src="assets/svg/devicon-master/icons/canva/canva-original.svg" alt="HTML5 Icon" width="30" height="30">Canva</span>
+            <span class="skill-tag">Filmora</span>
+            <span class="skill-tag">CapCut</span>
+            <span class="skill-tag">Content Editing</span>
+            <span class="skill-tag">Document Editing</span>
+        </div>
+    </div>
+</div>
+
+       
                 </div>
             </div>
         </div>
@@ -93,29 +227,30 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon"><a href="mailto:jayantbhusare06@gmail.com" style="text-decoration: none;">✉️</a></div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p>your.email@example.com</p>
+                            <p>jayantbhusare06@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">📱</div>
+                        <div class="contact-icon"><a href="https://wa.me/9763397522"><svg height="24px" width="24px" version="1.1" class="conn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#20A83E;" d="M437.019,74.98C388.668,26.628,324.38,0,256,0S123.333,26.628,74.98,74.98S0,187.62,0,256 c0,51.485,15.154,100.938,43.874,143.34L0.69,500.106c-1.343,3.134-0.607,6.966,1.798,9.381c2.495,2.506,6.519,3.206,9.714,1.684 l96.358-45.885C151.858,495.866,202.721,512,256,512c68.38,0,132.668-26.628,181.019-74.98C485.371,388.667,512,324.38,512,256 S485.371,123.333,437.019,74.98z"></path> <circle style="fill:#E5E5E5;" cx="256" cy="256" r="213.333"></circle> <circle style="fill:#FFFFFF;" cx="256" cy="256" r="187.733"></circle> <path style="fill:#20A83E;" d="M392.391,342.641l-7.673-41.561c-0.635-3.432-3.295-6.133-6.718-6.818l-60.339-12.067 c-2.802-0.559-5.691,0.317-7.709,2.334l-24.514,24.514c-41.302-18.507-64.226-41.478-84.396-84.555l24.435-24.436 c2.018-2.017,2.893-4.91,2.334-7.708l-12.068-60.34c-0.685-3.423-3.386-6.084-6.819-6.718l-41.561-7.673 c-1.138-0.21-2.31-0.187-3.44,0.07c-10.974,2.494-20.987,8.023-28.956,15.994c-13.801,13.801-19.075,33.938-15.252,58.237 c6.418,40.801,26.409,97.583,63.289,134.61l0.502,0.5c37.001,36.855,93.782,56.846,134.583,63.265 c5.14,0.809,10.092,1.21,14.838,1.21c17.694,0,32.517-5.581,43.4-16.462c7.97-7.971,13.5-17.984,15.993-28.957 C392.578,344.951,392.602,343.78,392.391,342.641z"></path> <path style="fill:#189433;" d="M349.996,376.428c-4.747,0-9.698-0.401-14.838-1.21c-40.801-6.419-97.583-26.41-134.583-63.265 l-0.502-0.5c-36.88-37.027-56.87-93.809-63.289-134.61c-3.323-21.118,0.236-39.088,10.283-52.492 c-4.388,2.565-8.458,5.689-12.097,9.328c-13.801,13.801-19.075,33.938-15.252,58.237c6.418,40.801,26.409,97.583,63.289,134.61 l0.502,0.5c37.001,36.855,93.782,56.846,134.583,63.265c5.14,0.809,10.092,1.21,14.838,1.21c17.694,0,32.517-5.581,43.4-16.462 c1.974-1.974,3.797-4.075,5.463-6.284C372.747,373.836,362.037,376.428,349.996,376.428z"></path> </g></svg></a></div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+91 9763397522</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <p>San Francisco, CA</p>
+                            <p>Maharashtra, India.</p>
                         </div>
                     </div>
                 </div>
                 
-                <form id="contact-form" class="contact-form">
+                <form id="contact-form" class="contact-form"   action="https://formspree.io/f/mqayvrjr"
+  method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -138,6 +273,9 @@
             </div>
         </div>
     </section>
+    <div id="goup" title="Go to gop">&#8593;</div>
+
+
 
     <!-- Footer -->
     <div id="footer-container"></div>

@@ -263,3 +263,7 @@ body {
     width: 300px;
     height: 300px;
 }
+@keyframes moveNeon {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}

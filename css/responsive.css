@@ -5,6 +5,10 @@
     .hero-title {
         font-size: 2.5rem;
     }
+    .theme-toggle{
+        top: 3.5vh;
+        left: 40%;
+    }
     
     .hero-subtitle {
         font-size: 1.25rem;
@@ -38,18 +42,36 @@
     /* Navigation */
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 70px;
+        left: -120%;
+        top: 67px;
         flex-direction: column;
-        background-color: white;
         width: 100%;
+        background-color: white;
         text-align: center;
         transition: left 0.3s ease;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         gap: 0;
     }
-    
+    .theme-toggle{
+        top: 2vh;
+        left: 80%;
+    }
+    .conn{
+    width: 4vh;
+    height: 4vh;
+    margin: 2vh 0px 0px 0px;
+}
+#goup{
+      width: 40px;
+  height: 40px;
+}
+    .navbar{
+        top: 0vh;
+        left: 0vh;
+        right: 0vh;
+        border-radius: 0px;
+    }
     .nav-menu.active {
         left: 0;
     }
@@ -60,6 +82,8 @@
     
     .nav-toggle {
         display: flex;
+        position: fixed;
+        right: 0;
     }
     
     .nav-toggle.active .hamburger:nth-child(1) {
@@ -78,6 +102,16 @@
     .hero-title {
         font-size: 2rem;
     }
+    .hero-section{
+        padding: 0px;
+        height: 100%;
+        display: block;
+    }
+
+
+    .resume-download{
+        width: 100%;
+    }
     
     .hero-subtitle {
         font-size: 1.1rem;
@@ -88,7 +122,7 @@
     }
     
     .hero-cta {
-        flex-direction: column;
+        flex-direction: inherit;
         gap: 0.75rem;
     }
     
@@ -130,7 +164,8 @@
     }
     
     .project-image {
-        height: 200px;
+   
+        object-fit: contain;
     }
     
     /* Contact */
@@ -141,23 +176,7 @@
     .contact-form {
         padding: 1.5rem;
     }
-    
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+
 }
 
 /* Small mobile devices (max-width: 480px) */
@@ -184,7 +203,8 @@
     }
     
     .profile-img {
-        max-width: 180px;
+        max-width: 100vh;
+        height: 50vh;
     }
     
     .skill-tag {
@@ -300,21 +320,21 @@
 }
 
 /* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
-        --text-dark: #f9fafb;
-        --text-light: #d1d5db;
-        --bg-light: #1f2937;
-        --bg-white: #111827;
-        --border-color: #374151;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --bg-white: #ffffff;
+    --border-color: #e5e7eb;
     }
     
     .navbar {
-        background: rgba(17, 24, 39, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     }
     
     .project-card,
     .contact-form {
-        background: #1f2937;
+        background: #ffffff;
     }
 }

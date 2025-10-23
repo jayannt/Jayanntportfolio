@@ -22,6 +22,13 @@ npm-debug.log*
 *.tmp
 temp/
 
+# Node modules (if any)
+node_modules/
+
 # Build outputs (if using build tools later)
 dist/
 build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
